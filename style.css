@@ -1,0 +1,117 @@
+body{
+    background-color:#3dabff;
+}
+
+h1{
+     text-shadow: 1px 1px 2px black, 0 0 25px white, 0 0 5px blue;
+}
+
+a{
+      text-decoration:none;
+    }
+
+.thick{
+    border:5px solid black;
+}
+
+nav li{
+    display:inline-block;
+    float:left;
+    color:#000000;
+    padding:12px 20px;
+    padding-right:50px;
+}
+nav a{
+    font-size:20px;
+    color:#000000;
+    font-family:cursive;
+    font-weight:bold;
+    text-shadow:0 0 5px #2732ab;
+}
+nav ul{
+    padding-left:30;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    list-style-type:none;
+    background-color:white;
+}
+
+li:hover{
+      background-color:#1c60e8;
+      font-weight:bold;
+}
+li:active{
+    color:#000000; text-decoration:underline;
+}
+
+.turon{
+    color:#071ae8;
+}
+
+.project {
+    background-color: #80b9ff;
+	font-size:100%;
+	padding: 1%;
+	width: 250px;
+	height: 270px;
+	float: left;
+	border-radius: 10px;
+    margin-right:4.8%;
+	margin-top:1%; 
+	margin-bottom:1%;
+
+}
+.project a{
+    color:#3b55eb;
+    text-decoration:none;
+    font-weight:bold;
+    font-family:cursive;
+}
+.project img{
+    width:85%;
+}
+
+.project a:hover{
+    font-size:120%;
+}
+
+.gamer{
+    background-color: #80b9ff;
+	font-size:100%;
+	padding: 1%;
+	width: 250px;
+	height: 270px;
+	float: left;
+	border-radius: 10px;
+    margin-right:4.8%;
+	margin-top:1%; 
+	margin-bottom:1%;
+}
+
+.gamer a{
+    color:black;
+    text-decoration:none;
+    font-weight:bold;
+    font-family:cursive;
+}
+.gamer img{
+    width:100%;
+    margin-bottom:1%;
+}
+
+.gamer a:hover{
+    font-size:120%;
+    color:#002cf2;
+}
+.copyright p{
+    background-color: white;
+	font-size:100%;
+	padding:.5%;
+	width: 98.99%;
+	height: 25px;
+	float: left;
+	margin-top:1%; 
+    text-align:center;
+    font-weight:bold;
+}
