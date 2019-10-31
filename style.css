@@ -115,3 +115,44 @@ li:active{
     text-align:center;
     font-weight:bold;
 }
+.webless{
+    background-color: #3dabff;
+	font-size:100%;
+	padding: 1%;
+	width: 250px;
+	height: 270px;
+	float: left;
+	border-radius: 10px;
+    margin-right:4.8%;
+	margin-top:1%; 
+	margin-bottom:1%;
+}
+
+.webless a{
+    color:#3b55eb;
+    text-decoration:none;
+    font-weight:bold;
+    font-family:cursive;
+}
+
+.webless img{
+    width:85%;
+}
+
+.webless a:hover{
+    width:120%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
