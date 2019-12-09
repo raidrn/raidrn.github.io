@@ -1,5 +1,3 @@
-<!Doctype: HTML w/ Processing>
-
 <html>
 
   <head>
@@ -12,8 +10,80 @@
     <h1>FLAPPY BIRD | HALLOWEEN EDITION</h1>
     <p>test</p>
     
+    <header>
+        <div>
+            <nav><!Comment "The Navigation Bar"> 
+                <ul>
+                    
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="gamer.html">Games</a></li>
+                    <li><a href="web.html">Web Design</a></li>
+                    <li><a class="turnon" href="mygame.html"></a></li>
+                        
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
     <script type="text/processing">
 
+     Ball[] ball;
+
+      void setup(){
+        size(700, 600);
+        frameRate(100);
+        ball = new Ball[100];
+        for(int i = 0; i < ball.length; i++){
+            ball[i] = new Ball();
+        }
+      }
+
+
+
+      void draw(){
+          background(155,0,0);
+            for(int i = 0; i < ball.length; i++){
+                ball[i].display();
+            }
+
+      }
+      class Ball{
+
+          float x;
+          float y;
+          float Vx;
+          float Vy;
+          float r,g,b,o;
+          float d;
+
+          Ball(){
+              x = random(width);
+              y = random(height);
+              Vx = random(-5,5);
+              Vy = random(-5,5);
+              r = random(255);
+              g = random(255);
+              b = random(255);
+              o = random(255);
+              d = random(30) + 15;
+          }
+
+          void display(){
+              fill(r,g,b,o);
+              ellipse(x,y,d,d);
+              x += Vx;
+              y += Vy;
+              if(x > width || x < 0){
+                  Vx *= -1;
+              }
+              if(y > height || y < 0){
+                  Vy *= -1;
+              }
+          }
+    }
+
+          
     </script>
     <canvas id="sketch" style="border: 1px solid black;"></canvas>
     
