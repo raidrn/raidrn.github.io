@@ -85,8 +85,9 @@
      void startingPic(){
       image(bg, 0, 0);
       textSize(40);
-      text("Welcome To Flappy Ghost", 40, 100);
-      text("Click to Begin!", 40, 200);
+      fill(255,165,0);
+      text("🎃Welcome To Flappy Ghost🎃", 150, 300);
+      text("Click to Begin!", 250, 400);
       if(mousePressed){
         gy = height/2;
         gameRec = 0;
@@ -121,7 +122,7 @@
       if(gy > height || gy < 0){
         fill(255);
         textSize(20);
-        text("You went off the screen!!", 200, 460);
+        text("You went off the screen!!", 265, 450);
         gameRec=1;
       }
     }
